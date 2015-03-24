@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFDFE"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/iv_settings"
+            android:onClick="showSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_below="@id/iv_settings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="20dp">
+         </EditText>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/et_text"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue"
+            android:onClick="send"
+            android:text="Send" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_send"
+            android:layout_alignBottom="@+id/btn_send"
+            android:layout_marginLeft="24dp"
+            android:padding="10dp"
+            android:background="@color/blue"
+            android:layout_toRightOf="@+id/btn_send"
+            android:onClick="clear"
+            android:text="Clear" />
+
+        <TextView
+            android:id="@+id/tv_report"
+            android:layout_width="fill_parent"
+            android:textColor="@color/black"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_send"
+            android:padding="10dp"
+            android:text="Report" />
+
+        <ProgressBar
+            android:id="@+id/pb_waiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>
