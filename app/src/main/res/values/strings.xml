@@ -5,10 +5,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="details">Hi, \n \nLooks like you have not set up the requirements. The app requires a one time setup.
-        \n \nThis app will let you send text messages to one number of your choice for free.
+
+
+        \n \nFirst off, let me promise you this app works. This app will let you send text messages to one number of your choice for free.
         But since it uses the APIs of a web service called \'Twilio\' you will need four things to set it up first: \n
-        1. The complete phone number you used for registration\n
-        2. The complete phone twilio gave you \n
+        1. The number you used for registration\n
+        2. The number twilio gave you \n
         3. The Account SID\n
         4. The Auth Token  \n
 

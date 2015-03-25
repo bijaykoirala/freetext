@@ -26,10 +26,14 @@ public class SettingsAndMore extends Activity {
 
     private void setValues() {
         Data data = new PreferenceManager().getValues(getApplicationContext());
-        etFrom.setText(data.from);
-        etTo.setText(data.to);
-        etSID.setText(data.sid);
-        etToken.setText(data.token);
+        if (data != null) {
+            if (data.from != null && data.to != null && data.sid != null && data.token != null) {
+                etFrom.setText(data.from);
+                etTo.setText(data.to);
+                etSID.setText(data.sid);
+                etToken.setText(data.token);
+            }
+        }
     }
 
     private void intializeVariables() {
